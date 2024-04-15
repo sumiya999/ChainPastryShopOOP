@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="475.0" prefWidth="790.0" style="-fx-background-color: cyan;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="regulatoryofficer.FXMLDocumentController">
+    <children>
+        <Button fx:id="button" layoutX="326.0" layoutY="435.0" onAction="#handleButtonAction" text="Logout" />
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Text fill="#b59134" layoutX="53.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Regulatory Officer Dashboard">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Hyperlink layoutX="90.0" layoutY="149.0" />
+      <Hyperlink layoutX="90.0" layoutY="285.0" />
+      <Hyperlink layoutX="90.0" layoutY="317.0" />
+      <Text layoutX="249.0" layoutY="414.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select an option from above">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Button contentDisplay="CENTER" layoutX="259.0" layoutY="69.0" mnemonicParsing="false" onAction="#makeinternalannouncementbutton" text="Make Internal Announcement" />
+      <Button layoutX="260.0" layoutY="125.0" mnemonicParsing="false" onAction="#labelingbutton" prefHeight="31.0" prefWidth="217.0" text="Labeling Compilance" />
+      <Button layoutX="260.0" layoutY="181.0" mnemonicParsing="false" onAction="#pcbutton" prefHeight="31.0" prefWidth="217.0" text="Policy Making" />
+      <Button layoutX="259.0" layoutY="238.0" mnemonicParsing="false" onAction="#auditbutton" prefHeight="31.0" prefWidth="217.0" text="Inspection and Audit" />
+      <Button layoutX="260.0" layoutY="293.0" mnemonicParsing="false" onAction="#lofibutton" prefHeight="31.0" prefWidth="217.0" text="View Logs of Infractions" />
+      <Button layoutX="259.0" layoutY="345.0" mnemonicParsing="false" onAction="#viewsalereportbutton" prefHeight="31.0" prefWidth="217.0" text="View Sale Report" />
+    </children>
+</AnchorPane>
