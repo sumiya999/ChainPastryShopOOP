@@ -1,0 +1,37 @@
+Financial Report - [14 April,2024]
+
+Company Name: Mr. Baker
+Period Covered: [1st March] to [4th April]
+
+Income Statement:
+----------------------------------------
+Revenue: 10,000 BDT
+Cost of Goods Sold: 3,0000 BDT
+Gross Profit: 7,0000 BDT
+
+Operating Expenses:
+----------------------------------------
+Rent: 1,50000 BDT
+Utilities: 5000 BDT
+Salaries: 2,0000 BDT
+Marketing: 1,0000 BDT
+Total Operating Expenses: 5,0000 BDT
+
+Net Profit: 2,0000 BDT
+
+Balance Sheet:
+----------------------------------------
+Assets:
+  Cash: 5,0000 BDT
+  Accounts Receivable: 2,0000 BDT
+  Inventory: 3,0000 BDT
+Total Assets: 10,0000 BDT
+
+Liabilities:
+  Accounts Payable: 1,0000 BDT
+  Loans Payable: 2,0000 BDT
+Total Liabilities: 3,0000 BDT
+
+Owner's Equity: 7,0000 BDT
+
+

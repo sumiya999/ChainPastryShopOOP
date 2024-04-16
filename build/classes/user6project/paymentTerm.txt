@@ -1,0 +1,12 @@
+Invoice Date: [Date]
+Payment Due Date: [Date + 30 days]
+Late Payment Penalty: 1.5% interest per month on overdue balances.
+Accepted Payment Methods: Bank Transfer, PayPal.
+Payment Currency: BDT.
+Early Payment Discount: 2% discount if paid within 10 days of the invoice date.
+Partial Payments: Partial payments are accepted only with prior agreement.
+Billing Address: [Your Company Address]
+Late Fees and Collection Costs: Client responsible for all collection costs incurred due to late or non-payment.
+Invoice Disputes: Any disputes regarding the invoice must be communicated within 15 days of the invoice date.
+Cancellation Policy: [Insert applicable cancellation policy].
+Confidentiality: Payment information will be kept confidential and used only for the purpose of this transaction.

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="590.0" prefWidth="711.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user6project.CFObudgetManagementController">
+   <children>
+      <AnchorPane layoutX="-34.0" layoutY="29.0" prefHeight="62.0" prefWidth="745.0" style="-fx-background-color: #008080;">
+         <children>
+            <Label layoutX="42.0" layoutY="10.0" text="Budget Management ">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button layoutX="469.0" layoutY="515.0" mnemonicParsing="false" onAction="#generateBudgetReportButton" text="Generate Report">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <TableView fx:id="budgetTV" layoutX="42.0" layoutY="295.0" prefHeight="200.0" prefWidth="446.0">
+        <columns>
+          <TableColumn fx:id="taskCol" prefWidth="105.0" text="Task" />
+            <TableColumn fx:id="monthCol" prefWidth="75.0" text="Month" />
+            <TableColumn fx:id="yearCol" prefWidth="121.0" text="Year" />
+          <TableColumn fx:id="budgetCol" prefWidth="144.0" text="Budget" />
+        </columns>
+      </TableView>
+      <Button layoutX="630.0" layoutY="515.0" mnemonicParsing="false" onAction="#backToHomeButton" text="⬅ " />
+      <TextField fx:id="taskTF" layoutX="124.0" layoutY="112.0" />
+      <TextField fx:id="yearTF" layoutX="430.0" layoutY="112.0" />
+      <TextField fx:id="monthTF" layoutX="124.0" layoutY="172.0" />
+      <TextField fx:id="budgetTF" layoutX="430.0" layoutY="172.0" />
+      <Label layoutX="42.0" layoutY="117.0" text="Task :" />
+      <Label layoutX="42.0" layoutY="177.0" text="Month :" />
+      <Label layoutX="363.0" layoutY="117.0" text="Year :" />
+      <Label layoutX="363.0" layoutY="177.0" text="Budget :" />
+      <Button layoutX="42.0" layoutY="253.0" mnemonicParsing="false" onAction="#addNewBudgetButton" prefHeight="31.0" prefWidth="75.0" text="Add">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

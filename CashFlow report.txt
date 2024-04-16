@@ -1,0 +1,4 @@
+
+Cashflow Report
+Date	Description	Cash Inflows	Cash Outflows	Net Cashflow
+2024-03-12	aa	1234.00	234.00	1000.00
