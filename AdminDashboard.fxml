@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="499.0" prefWidth="821.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mrbaker.AdminDashboardController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Label fx:id="label1" layoutX="136.0" layoutY="130.0" minHeight="16" minWidth="69" />
+      <AnchorPane id="AnchorPane" layoutX="-4.0" prefHeight="637.0" prefWidth="893.0" style="-fx-background-color: #E6BF83;">
+         <children>
+            <BorderPane fx:id="borderPane" layoutX="4.0" layoutY="2.0" prefHeight="668.0" prefWidth="1119.0">
+               <left>
+                  <AnchorPane prefHeight="593.0" prefWidth="290.0" style="-fx-background-color: #A0522D;" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button layoutX="31.0" layoutY="212.0" mnemonicParsing="false" onAction="#EmpolyeeSectionButtonOnClick" prefHeight="40.0" prefWidth="200.0" text="Employee" />
+                        <Button layoutX="31.0" layoutY="267.0" mnemonicParsing="false" onAction="#RetailerSectionButtonOnClick" prefHeight="40.0" prefWidth="200.0" text="Retailer" />
+                        <Button layoutX="31.0" layoutY="326.0" mnemonicParsing="false" onAction="#PendingApplicationsSectionButtonOnClick" prefHeight="40.0" prefWidth="200.0" text="Pending Applications" />
+                        <Button layoutX="31.0" layoutY="443.0" mnemonicParsing="false" onAction="#AnnouncementSectionButtonOnClick" prefHeight="40.0" prefWidth="200.0" text="Announcements" />
+                        <Button layoutX="31.0" layoutY="385.0" mnemonicParsing="false" onAction="#OperationsSectionButtonOnClick" prefHeight="40.0" prefWidth="200.0" text="Operations" />
+                        <Button layoutX="31.0" layoutY="526.0" mnemonicParsing="false" onAction="#SignOutButtonOnClick" prefHeight="40.0" prefWidth="200.0" text="Sign Out" />
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="45.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../Downloads/shopLogo.jpeg" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="mrbakerlabel2" layoutX="103.0" layoutY="104.0" text="CAKES &amp; PASTRIES" textFill="#571c1c">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </left>
+               <top>
+                  <MenuBar prefHeight="40.0" prefWidth="889.0" style="-fx-background-color: #F0E9D6;" BorderPane.alignment="CENTER">
+                     <menus>
+                        <Menu mnemonicParsing="false" text="File">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="Close" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Statistics">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="Delete" />
+                           </items>
+                        </Menu>
+                     </menus>
+                  </MenuBar>
+               </top>
+            </BorderPane>
+            <Label fx:id="label1" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+            <Label fx:id="mrbakerlabel1" layoutX="93.0" layoutY="116.0" prefHeight="21.0" prefWidth="87.0" text="Mr Baker" textFill="#5b2b2b">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

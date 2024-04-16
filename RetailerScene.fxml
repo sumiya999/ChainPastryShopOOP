@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="mrbaker.RetailerSceneController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="583.0" prefWidth="825.0" style="-fx-background-color: #E6BF83;">
+         <children>
+            <Label layoutX="69.0" layoutY="34.0" prefHeight="45.0" prefWidth="277.0" text="Retailers">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Button layoutX="628.0" layoutY="447.0" mnemonicParsing="false" onAction="#toAddRetailerButtonOnClick" prefHeight="34.0" prefWidth="125.0" text="Add Retailer" />
+            <TableView fx:id="retailerTableView" layoutX="69.0" layoutY="99.0" prefHeight="328.0" prefWidth="685.0" style="-fx-background-color: #F0E9D6;">
+               <columns>
+                  <TableColumn fx:id="retailerIdColumn" prefWidth="75.0" text="ID" />
+                  <TableColumn fx:id="retailerNameColumn" prefWidth="108.0" text="Name" />
+                  <TableColumn fx:id="retailerPasswordColumn" prefWidth="115.0" text="Password" />
+                  <TableColumn fx:id="productTypeColumn" prefWidth="165.0" text="Product" />
+                  <TableColumn fx:id="retailerPermanentColumn" prefWidth="95.0" text="Permanent?" />
+                  <TableColumn fx:id="retailerDOJColumn" prefWidth="126.0" text="DOJ" />
+               </columns>
+            </TableView>
+            <Button layoutX="69.0" layoutY="449.0" mnemonicParsing="false" onAction="#clearTableButtonOnClick" text="Clear" />
+            <Button layoutX="132.0" layoutY="449.0" mnemonicParsing="false" onAction="#loadTableButtonOnClick" text="Load" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

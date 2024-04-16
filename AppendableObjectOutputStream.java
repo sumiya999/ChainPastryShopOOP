@@ -2,16 +2,24 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package regulatoryofficer;
+package mrbaker;
+
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+import java.io.OutputStream;
 
 /**
  *
- * @author User
+ * @author ASUS
  */
 public class AppendableObjectOutputStream extends ObjectOutputStream {
 
-    public AppendableObjectOutputStream(FileOutputStream fos) {
-        super(fos);
+    public AppendableObjectOutputStream(OutputStream out) throws IOException {
+        super(out);
     }
-    
+
+    @Override
+    protected void writeStreamHeader() throws IOException {
+    }
+
 }
