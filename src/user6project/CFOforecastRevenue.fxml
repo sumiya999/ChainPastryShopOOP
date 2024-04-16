@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="522.0" prefWidth="1132.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user6project.CFOforecastRevenueController">
+   <children>
+      <AnchorPane layoutX="-7.0" layoutY="26.0" prefHeight="62.0" prefWidth="1140.0" style="-fx-background-color: #008080;" />
+      <Label layoutX="45.0" layoutY="33.0" text="Forecast Revenue">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="1032.0" layoutY="459.0" mnemonicParsing="false" onAction="#backToHomeButton" text="⬅ " />
+      <TableView fx:id="forecastRevenueTV" layoutX="44.0" layoutY="129.0" prefHeight="123.0" prefWidth="412.0">
+        <columns>
+          <TableColumn fx:id="dateCol" prefWidth="75.0" text="Date" />
+          <TableColumn fx:id="descriptionCol" prefWidth="156.0" text="Description" />
+            <TableColumn fx:id="projectedRevenueCol" minWidth="3.0" prefWidth="180.0" text="Projected Revenue ($)" />
+        </columns>
+      </TableView>
+      <TableView layoutX="207.0" layoutY="262.0" prefHeight="113.0" prefWidth="248.0">
+        <columns>
+          <TableColumn fx:id="totalRevenueCol" prefWidth="247.0" text="Total revenue" />
+        </columns>
+      </TableView>
+      <Button layoutX="847.0" layoutY="459.0" mnemonicParsing="false" onAction="#generateRevenueReportButton" text="Generate Report" />
+      <TextField fx:id="descriptionTF" layoutX="875.0" layoutY="181.0" />
+      <TextField fx:id="projectedRevenueTF" layoutX="875.0" layoutY="237.0" />
+      <Label layoutX="804.0" layoutY="131.0" prefHeight="21.0" prefWidth="52.0" text="Date">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="759.0" layoutY="183.0" text="Description">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="707.0" layoutY="239.0" text="Projected Revenue">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="datePicker" layoutX="880.0" layoutY="129.0" />
+      <Button layoutX="477.0" layoutY="129.0" mnemonicParsing="false" onAction="#addButton" text="Add" />
+      <Button layoutX="477.0" layoutY="266.0" mnemonicParsing="false" onAction="#showTotalRevenueButton" text="Show Total Revenue" />
+   </children>
+</AnchorPane>

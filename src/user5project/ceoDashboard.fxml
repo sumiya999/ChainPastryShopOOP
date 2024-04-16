@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="855.0" prefWidth="1289.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user5project.CeoDashboardController">
+   <children>
+      <AnchorPane layoutY="28.0" prefHeight="154.0" prefWidth="1300.0" style="-fx-background-color: #F0E9D6;" />
+      <ImageView fitHeight="148.0" fitWidth="206.0" layoutX="16.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/shopLogo.jpeg" />
+         </image>
+      </ImageView>
+      <BorderPane layoutY="-1.0" prefHeight="31.0" prefWidth="1289.0">
+         <center>
+            <MenuBar prefHeight="31.0" prefWidth="1162.0" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+      <Label fx:id="label" layoutX="84.0" layoutY="110.0" minHeight="16" minWidth="69" prefHeight="21.0" prefWidth="129.0" text="CAKES &amp; PASTRIES">
+         <font>
+            <Font size="12.0" />
+         </font></Label>
+      <AnchorPane layoutY="181.0" prefHeight="682.0" prefWidth="338.0" style="-fx-background-color: #E6BF83;">
+         <children>
+            <Button layoutX="16.0" layoutY="186.0" mnemonicParsing="false" onAction="#approvalRequestsButtonAction" text="Approval Requests">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="14.0" layoutY="128.0" mnemonicParsing="false" onAction="#meetingsAndAnnoucementsButtonAction" prefHeight="49.0" prefWidth="249.0" text="Meetings and Annoucements">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <ComboBox fx:id="realTimeAnalyticsCB" layoutX="16.0" layoutY="67.0" prefHeight="49.0" prefWidth="219.0" promptText="Real Time Analytics" />
+            <Button layoutX="263.0" layoutY="76.0" mnemonicParsing="false" onAction="#realTimeAnalyticsEnterButton" text="Enter" />
+            <Button layoutX="103.0" layoutY="607.0" mnemonicParsing="false" onAction="#logOutButtonAction" prefHeight="21.0" prefWidth="113.0" text="Log out">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="49.0" fitWidth="51.0" layoutX="24.0" layoutY="604.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/shop%20icon.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <TextField layoutX="403.0" layoutY="59.0" prefHeight="31.0" prefWidth="601.0" promptText="Search Here" />
+      <Label layoutX="61.0" layoutY="75.0" prefHeight="43.0" prefWidth="136.0" text="Mr Baker" textFill="#6b0707">
+         <font>
+            <Font name="Constantia Bold" size="24.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="338.0" layoutY="181.0" prefHeight="682.0" prefWidth="961.0" style="-fx-background-color: #A0522D;">
+         <children>
+            <Label layoutX="32.0" layoutY="14.0" prefHeight="60.0" prefWidth="206.0" text="Dashboard" textFill="#ffe5d0">
+               <font>
+                  <Font name="Constantia Bold" size="36.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="37.0" layoutY="106.0" prefHeight="104.0" prefWidth="249.0" style="-fx-background-color: #F0E9D6;">
+               <children>
+                  <ImageView fitHeight="77.0" fitWidth="64.0" layoutX="8.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/userIcon.jpeg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="80.0" layoutY="14.0" prefHeight="27.0" prefWidth="55.0" text="Users" textFill="#8d7b7b">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="81.0" layoutY="43.0" text="550">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="77.0" layoutY="76.0" text="+1.90%" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="309.0" layoutY="106.0" prefHeight="104.0" prefWidth="242.0" style="-fx-background-color: #F0E9D6;">
+               <children>
+                  <Label layoutX="7.0" layoutY="14.0" prefHeight="30.0" prefWidth="232.0" text="Gross Profit Margin (%)     :" textFill="#7c7474">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="14.0" layoutY="312.0" prefHeight="305.0" prefWidth="449.0" style="-fx-background-color: #F0E9D6;">
+               <children>
+                  <ImageView fitHeight="307.0" fitWidth="279.0" layoutX="14.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/piechart.jpeg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="474.0" layoutY="309.0" prefHeight="311.0" prefWidth="476.0" style="-fx-background-color: #F0E9D6;">
+               <children>
+                  <ImageView fitHeight="292.0" fitWidth="355.0" layoutX="61.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/graph.jpeg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="567.0" layoutY="105.0" prefHeight="104.0" prefWidth="232.0" style="-fx-background-color: #F0E9D6;" />
+         </children>
+      </AnchorPane>
+      <Circle fill="WHITE" layoutX="1116.0" layoutY="65.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="1161.0" layoutY="49.0" text="Name" />
+      <Label layoutX="1161.0" layoutY="70.0" text="CEO" />
+   </children>
+</AnchorPane>

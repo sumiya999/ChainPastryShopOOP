@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user6project.CFOannouncementsController">
+   <children>
+      <AnchorPane layoutX="-11.0" layoutY="28.0" prefHeight="62.0" prefWidth="696.0" style="-fx-background-color: #008080;">
+         <children>
+            <Label layoutX="75.0" layoutY="14.0" text="Annoucements">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button layoutX="616.0" layoutY="339.0" mnemonicParsing="false" onAction="#backToHomeButton" text="⬅ " />
+      <TextField fx:id="meetingNotificationTF" layoutX="52.0" layoutY="148.0" prefHeight="53.0" prefWidth="308.0" />
+      <Button layoutX="259.0" layoutY="317.0" mnemonicParsing="false" onAction="#responseButton" text="Response" />
+      <TextField fx:id="responseTF" layoutX="52.0" layoutY="317.0" />
+      <Button layoutX="52.0" layoutY="104.0" mnemonicParsing="false" onAction="#meetingCallsButton" prefHeight="31.0" prefWidth="137.0" text="Meeting Calls  :" />
+   </children>
+</AnchorPane>

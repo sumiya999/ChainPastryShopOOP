@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="858.0" prefWidth="1085.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user6project.CFOtaxPlanningController">
+   <children>
+      <AnchorPane layoutX="-1.0" layoutY="48.0" prefHeight="56.0" prefWidth="1082.0" style="-fx-background-color: #008080;" />
+      <Label layoutX="86.0" layoutY="51.0" prefHeight="53.0" prefWidth="271.0" text="Tax Planning">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <TableView fx:id="taxCalculationTV" layoutX="28.0" layoutY="329.0" prefHeight="215.0" prefWidth="581.0">
+        <columns>
+          <TableColumn fx:id="taxRateCol" prefWidth="75.0" text="Tax Rate" />
+            <TableColumn fx:id="grossRevenueCol" prefWidth="125.0" text="Gross Revenue" />
+            <TableColumn fx:id="totalExpensesCol" prefWidth="120.0" text="Total Expenses" />
+            <TableColumn fx:id="taxableIncomeCol" prefWidth="128.0" text="Taxable Income" />
+            <TableColumn fx:id="taxOwedCol" prefWidth="132.0" text="Tax Owed" />
+        </columns>
+      </TableView>
+      <TableView fx:id="netIncomeAfterTaxTV" layoutX="28.0" layoutY="607.0" prefHeight="169.0" prefWidth="475.0">
+        <columns>
+          <TableColumn fx:id="grossRevenueCol" prefWidth="142.0" text="Gross Revenue" />
+          <TableColumn fx:id="totalExpensesCol" minWidth="8.0" prefWidth="123.0" text="Total Expenses" />
+            <TableColumn fx:id="taxOwedCol" prefWidth="95.0" text="Tax Owed" />
+            <TableColumn fx:id="netIncomeCol" prefWidth="114.0" text="Net Income" />
+        </columns>
+      </TableView>
+      <Label layoutX="28.0" layoutY="559.0" text="Net Income After Tax :">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="283.0" text="Tax  Calculation :">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TableView fx:id="totalExpensesTV" layoutX="655.0" layoutY="329.0" prefHeight="200.0" prefWidth="396.0">
+        <columns>
+          <TableColumn fx:id="businessExpensesCol" prefWidth="150.0" text="Business Expenses" />
+          <TableColumn fx:id="amountCol" minWidth="0.0" prefWidth="89.0" text="Amount" />
+            <TableColumn fx:id="totalExpensesCol" prefWidth="156.0" text="Total Expenses" />
+        </columns>
+      </TableView>
+      <Label layoutX="655.0" layoutY="283.0" text="Total Expenses :">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="806.0" layoutY="787.0" mnemonicParsing="false" onAction="#generateTaxReportButton" text="Generate Tax report" />
+      <Button layoutX="996.0" layoutY="787.0" mnemonicParsing="false" onAction="#backToHomeButton" text="⬅ " />
+      <TextField layoutX="128.0" layoutY="139.0" />
+      <TextField layoutX="447.0" layoutY="139.0" />
+      <TextField fx:id="businessExpenseTF" layoutX="853.0" layoutY="131.0" />
+      <TextField fx:id="amountTF" layoutX="853.0" layoutY="192.0" />
+      <TextField layoutX="449.0" layoutY="199.0" />
+      <TextField layoutX="128.0" layoutY="199.0" />
+      <Label layoutX="692.0" layoutY="133.0" text="Business Expense:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="694.0" layoutY="194.0" text="Amount :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="829.0" layoutY="283.0" mnemonicParsing="false" onAction="#addExpenseButton" text="Add Expense" />
+   </children>
+</AnchorPane>
